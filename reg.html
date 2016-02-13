@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		Сайт учителя
-	</title>
-	</head>
-	<body>
-		<div>
-			<h1>Регистрация</h1>
-		</div>
-		<form>
-			<b>Имя пользователя</b><br>
-			<input><br><br>
-			<b>Пароль</b><br>
-			<input><br><br>
-			<b>О себе</b><br>
-			<textarea rows="10"></textarea><br><br>
-			<b>Пол</b><br>
-			<select size=1>
-				<option>Мужской
-				<option>Женский
-			</select><br><br>	
-			<button>Сохранить
-		</form>
-	</body>
+    <meta charset="UTF-8">
+    <title>
+        РЎР°Р№С‚ СѓС‡РёС‚РµР»СЏ
+    </title>
+</head>
+<body>
+<div>
+    <h1>Р РµРіРёСЃС‚СЂР°С†РёСЏ</h1>
+</div>
+<form action="cgi.php" method="post">
+    <b>РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ</b><br>
+    <input name="name"><br><br>
+    <b>РџР°СЂРѕР»СЊ</b><br>
+    <input name="pass"><br><br>
+    <b>Рћ СЃРµР±Рµ</b><br>
+    <textarea rows="10" name="about"></textarea><br><br>
+    <b>РџРѕР»</b><br>
+    <select size=1 name="sex">
+        <option value="1">РњСѓР¶СЃРєРѕР№</option>
+        <option value="2">Р–РµРЅСЃРєРёР№</option>
+    </select><br><br>
+    <input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ">
+</form>
+</body>
 </html>
