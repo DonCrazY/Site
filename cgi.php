@@ -1,5 +1,15 @@
 <?php
 
+include "config.php";
+
+//$query = "insert into 'user' ('name', 'password', 'about', 'sex') values ('".$_POST['name']."', '".$_POST['pass']."', '".$_POST['about']."', '".$_POST['sex']."')";
+
+$query = "insert into `user` (`name`, `password`, `about`, `sex`) values ('".$_POST['name']."', '".$_POST['pass']."', '".$_POST['about']."', ".$_POST['sex'].")";
+//echo $query;
+
+mysqli_query($dbConnect, $query);
+echo mysqli_error($dbConnect);
+
 $doc = file_get_contents("index.html");
 $docs = explode("<span id='result'></span>", $doc);
 
