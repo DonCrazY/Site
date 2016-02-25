@@ -7,6 +7,18 @@
     </title>
 </head>
 <body>
+
+<?php
+session_start();
+if (isset($_SESSION['username']))
+{
+    echo $_SESSION['username'];
+    echo " <a href='logout.php'>Выход</a>";
+    //session_destroy();
+}
+?>
+
+
 <div>
     <h1>Расписание</h1>
 </div>

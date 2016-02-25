@@ -10,6 +10,6 @@ mysqli_query($dbConnect, $query);
 
 echo mysqli_error($dbConnect);
 
-header("Location: index.html");
+header("Location: index.php");
 
 ?>

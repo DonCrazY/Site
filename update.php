@@ -14,7 +14,7 @@
     <b>Имя пользователя</b><br>
     <input name="name" value="<?php echo $_GET['name']; ?>"><br><br>
     <b>Пароль</b><br>
-    <input name="pass" value="<?php echo $_GET['pass']; ?>"><br><br>
+    <input name="pass"><br><br>
     <b>О себе</b><br>
     <textarea rows="10" name="about"><?php echo $_GET['about']; ?></textarea><br><br>
     <b>Пол</b><br>
